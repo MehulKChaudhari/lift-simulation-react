@@ -1,0 +1,16 @@
+.floor{
+    background-color: rgb(161, 235, 248);
+    border-radius: 5px;
+    width: 140%;
+    height: 120px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.floors__container{
+    display: flex;
+    flex-direction: column;
+}
