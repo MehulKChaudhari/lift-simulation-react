@@ -1,7 +1,6 @@
 import "./App.css";
 import Floor from "./components /Floor/Floor";
 import Lift from "./components /Lift";
-import Floors from "./components /Floor/Floors";
 
 function App() {
   const noOfFloors = 5;
