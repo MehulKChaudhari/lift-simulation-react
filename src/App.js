@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Floor from "./components /Floor/Floor";
+import Lift from "./components /Lift";
 
 function App() {
+  const noOfFloors = 5;
+  const floors = [];
+  for (var i = 0; i < noOfFloors; i++) {
+    floors.push(<Floor floorNumber={i}/>);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lift simulation</h1>
+      {/* <Floors floorsCount={noOfFloors}/> */}
+      <div className="floors__container">{floors}</div>
+        <Lift />
     </div>
   );
 }

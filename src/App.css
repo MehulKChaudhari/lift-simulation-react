@@ -1,10 +1,29 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.floors__container{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.lift{
+  padding: 3px;
+  /* position: absolute; */
+  /* top: -100px; */
+  border: 1px solid lightgreen;
 }
 
 @media (prefers-reduced-motion: no-preference) {
