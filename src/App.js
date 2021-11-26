@@ -5,17 +5,15 @@ import Lift from "./components /Lift";
 function App() {
   const noOfFloors = 5;
   const floors = [];
-  for (var i = 0;i < noOfFloors;  i++) {
-    floors.push(<Floor />);
+  for (var i = 0; i < noOfFloors; i++) {
+    floors.push(<Floor floorNumber={i}/>);
   }
   return (
     <div className="App">
       <h1>Lift simulation</h1>
       {/* <Floors floorsCount={noOfFloors}/> */}
-      {floors}
-      <div className="lift">
+      <div className="floors__container">{floors}</div>
         <Lift />
-      </div>
     </div>
   );
 }
