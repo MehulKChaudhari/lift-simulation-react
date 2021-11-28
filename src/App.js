@@ -1,19 +1,23 @@
 import "./App.css";
 import Floor from "./components /Floor/Floor";
+import Header from "./components /Header";
 import Lift from "./components /Lift";
+import Footer from "./components /Footer";
 
 function App() {
   const noOfFloors = 5;
   const floors = [];
-  for (var i = 0; i < noOfFloors; i++) {
-    floors.push(<Floor floorNumber={i}/>);
+  for (var i = noOfFloors; i >= 0; i--) {
+    floors.push(<Floor floorNumber={i} />);
   }
   return (
     <div className="App">
-      <h1>Lift simulation</h1>
-      {/* <Floors floorsCount={noOfFloors}/> */}
+      <Header />
       <div className="floors__container">{floors}</div>
-        <Lift />
+      <Lift />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
